@@ -22,6 +22,7 @@ public class Paciente implements Serializable {
 
 	}
 
+	//gets e sets
 	public long getId() {
 		return id;
 	}
