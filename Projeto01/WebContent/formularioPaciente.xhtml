@@ -23,6 +23,13 @@
 		    <p:outputLabel value="TELEFONE:"/><br/>
 		    <p:inputText value="#{pacienteMB.paciente.telefone}"/><br/>
 		    
+		    <h:panelGrid>
+		    <p:outputLabel for="sexo" value="SEXO:" />
+		    <p:selectOneRadio id="sexo" value="#{pacienteMB.paciente.sexo}" unselectable="true">
+            <f:selectItem itemLabel="M" itemValue="M" />
+            <f:selectItem itemLabel="F" itemValue="F" />
+            </p:selectOneRadio>
+		     </h:panelGrid>
 			<p:commandButton value="SALVAR" action="#{pacienteMB.salvar}" ajax="false" /><p/>
 			<p:commandButton value="CANCELAR" action="tabelaPaciente" ajax="false" /><p/>
 		</p:panel>	

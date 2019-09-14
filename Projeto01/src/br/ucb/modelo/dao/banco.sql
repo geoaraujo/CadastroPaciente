@@ -1,6 +1,6 @@
 CREATE DATABASE hospital;
 USE hospital;
-CREATE TABLE hospital (
+CREATE TABLE paciente (
  id int(10) unsigned NOT NULL AUTO_INCREMENT,
  nome varchar(50) NOT NULL,
  cpf int(11) unsigned NOT NULL,

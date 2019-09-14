@@ -17,7 +17,7 @@ public class Paciente implements Serializable {
 	private int cpf;
 	private String email;
 	private int telefone;
-
+	private char sexo;
 	public Paciente() {
 
 	}
@@ -63,4 +63,13 @@ public class Paciente implements Serializable {
 		this.telefone = telefone;
 	}
 
+	public char getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(char sexo) {
+		this.sexo = sexo;
+	}
+
+	
 }

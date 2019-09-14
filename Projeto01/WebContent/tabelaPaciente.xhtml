@@ -27,9 +27,15 @@
 				<h:outputText value="#{paciente.telefone}" />
 			</p:column>
 			
+			<p:column headerText="SEXO">
+				<h:outputText value="#{paciente.sexo}" />
+			</p:column>
+			
 			<p:column headerText="OPÇÕES">
-	            <h:commandLink value="excluir" action="#{pacienteMB.excluir(paciente)}"/>
-	          
+			
+	           <h:commandLink action="#{pacienteMB.excluir(paciente)}">
+						<h:graphicImage value="excluir.jpg" title="Excluir" width="22" height="22" style="border: none" />
+					</h:commandLink>
 			</p:column>
 		</p:dataTable>
 		<p:commandButton value="NOVO" action="#{pacienteMB.incluir}" ajax="false" />
